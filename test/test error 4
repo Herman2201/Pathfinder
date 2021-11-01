@@ -1,0 +1,9 @@
+4f
+Greenland-Bananal,8
+Fraser-Greenland,10
+Bananal-Fraser,3
+Java-Fraser,5
+
+  
+//>./pathfinder invalid1 | cat -e
+//error: line 1 is not valid

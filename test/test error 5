@@ -1,0 +1,9 @@
+>cat -e invalid2
+ 4
+ Greenland-Bananal,8
+ Fraser--Greenland,10
+ Bananal-Fraser,3
+ Java-Fraser,5
+
+ >./pathfinder invalid2 | cat -e
+ error: line 3 is not valid
