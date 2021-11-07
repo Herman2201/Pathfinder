@@ -24,5 +24,6 @@ int main(int argc, char *argv[])
         return 0;
     }
     fileContents(mass);
+    logic(mass);
     return 0;
 }
