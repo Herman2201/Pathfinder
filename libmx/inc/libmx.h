@@ -12,13 +12,11 @@ typedef struct s_list
 {
     void *data;
     struct s_list *next;
-} t_list;
+}               t_list;
 t_list *mx_create_node(void *data);
 
 t_list *mx_sort_list(t_list *lst, bool (*cmp)(void *, void *));
 //abobus
-
-void mx_printerr(char *a);
 void mx_printchar(char c);
 void mx_print_unicode(wchar_t c);
 void mx_printstr(const char *s);
@@ -27,6 +25,7 @@ void mx_printint(int num);
 void mx_swap_char(char *s1, char *s2);
 void mx_str_reverse(char *s);
 void mx_strdel(char **str);
+void mx_printerr(const char *s);
 void mx_del_strarr(char ***arr);
 void mx_foreach(int *arr, int size, void (*f)(int));
 void mx_push_front(t_list **list, void *data);
@@ -48,8 +47,8 @@ int mx_list_size(t_list *list);
 int mx_get_substr_index(const char *str, const char *sub);
 int mx_count_substr(const char *str, const char *sub);
 int mx_count_words(const char *str, char c);
-int mx_binary_search(char **arr, int size, const char *s, int *count);
-int mx_bubble_sort(char **arr, int size);
+int mx_binary_search(char** arr, int size, const char *s, int *count);
+int mx_bubble_sort(char** arr, int size);
 int mx_quicksort(char **arr, int left, int right);
 int mx_strlen(const char *s);
 int mx_sqrt(int x);
@@ -59,7 +58,6 @@ int mx_get_char_index(const char *str, char c);
 int mx_read_line(char **lineptr, size_t buf_size, char delim, const int fd);
 int mx_memcmp(const void *s1, const void *s2, size_t n);
 //abibys
-char **mx_sting_to_arr(const char *s, char c);
 char *mx_nbr_to_hex(unsigned long nbr);
 char *mx_itoa(int number);
 char *mx_strdup(const char *s1);
@@ -84,5 +82,4 @@ bool mx_islower(int c);
 bool mx_isupper(int c);
 double mx_pow(double n, unsigned int pow);
 
-int mx_atoi(const char *str);
 #endif

@@ -1,4 +1,0 @@
->cat -e empty_file
- >./pathfinder empty_file | cat -e
- error: file empty is empty
- 

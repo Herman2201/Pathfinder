@@ -1,5 +1,0 @@
->./pathfinder | cat -e
- usage: ./pathfinder [filename]
- >cat -e data_file
- cat: data_file: No such file or directory
- 

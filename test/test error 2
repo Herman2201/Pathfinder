@@ -1,3 +1,0 @@
->./pathfinder data_file | cat -e
- error: file data_file does not exist
- 
