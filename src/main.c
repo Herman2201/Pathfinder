@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
             arr[i][j] = INF;
     }
 
-    mx_fill_array(&arr, s, isl_t, (const most **)island);
+    mx_parse_structure(&arr, s, isl_t, (const most **)island);
 
     // создание матрицы кратчайших путей
 
@@ -76,7 +76,7 @@ int main(int argc, char *argv[])
             h->p = 1;
             h->r[0] = j;
             h->r[1] = i;
-            mx_print_spaths(arr, w_arr, h, s, (const most **)island);
+            mx_write_routs(arr, w_arr, h, s, (const most **)island);
         }
     }
     free(h->r);

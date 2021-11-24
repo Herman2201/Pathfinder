@@ -10,7 +10,7 @@ void mx_write_routs(int **init, int **w_arr, parse *h, int isl_c, const most **i
         {
             h->p++;
             h->r[h->p] = k;
-            mx_print_spaths(init, w_arr, h, isl_c, island);
+            mx_write_routs(init, w_arr, h, isl_c, island);
             h->p--;
         }
     }
